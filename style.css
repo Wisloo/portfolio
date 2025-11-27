@@ -17,19 +17,13 @@ header {
 	border-radius: 50%;
 }
 
-#theme-toggle {
-    background-color: antiquewhite;
-    padding: 10px 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
-    transition: background-color 0.3s;
-}
-
-#theme-toggle:hover {
-    background-color: #e6d4b8;
+button {
+	background-color: #dc2a2;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	margin-top: 10px;
+	cursor: pointer;
 }
 
 
