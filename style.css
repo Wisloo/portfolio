@@ -17,11 +17,61 @@ header {
 	border-radius: 50%;
 }
 
-button {
-	padding: 10px 20px;
-	margin-top: 10px;
-	cursor: pointer;
+.theme-toggle,
+.theme-toggle *,
+.theme-toggle :after,
+.theme-toggle :before,
+.theme-toggle:after,
+.theme-toggle:before {
+  border: 0 solid;
+  box-sizing: border-box;
 }
+.theme-toggle {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.theme-toggle:disabled {
+  cursor: default;
+}
+.theme-toggle:-moz-focusring {
+  outline: auto;
+}
+.theme-toggle svg {
+  display: block;
+  vertical-align: middle;
+}
+.theme-toggle [hidden] {
+  display: none;
+}
+.theme-toggle {
+  border: 3px solid;
+  border-radius: 50px 15px 15px 15px/15px 225px 255px 255px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 20px 80px;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.theme-toggle:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em #fff;
+  transform: translateY(-0.25em);
+}
+
 
 /* Dark Theme */
 body.dark {
