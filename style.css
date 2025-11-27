@@ -5,7 +5,7 @@ body {
 	color: #333;
 	margin: 0;
 	padding: 20px;
-	transition: background-color 0.3s ease, color, 0.3s ease;
+	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
@@ -19,13 +19,16 @@ header {
 }
 
 .theme-toggle {
-	background-color: #b2c7d1;
-	color: #000000;
-	border: none;
-	padding: 10px 20px;
-	margin-top: 10px;
-	cursor: pointer;
-	transition: opacity 0.5s ease, background-color 0.5s ease;
+	border-style: solid;
+    border-width: 0.5px;
+    border-color: black;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: opacity 0.5s ease, background-color 0.5s ease;
+    background-color: #000000;
+    color: #ffffff;
+
 }
 .theme-toggle:hover {
 	opacity: 0.8;
