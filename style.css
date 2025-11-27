@@ -20,7 +20,7 @@ header {
 
 .theme-toggle {
 	border-style: solid;
-	border-width: 2px;
+	border-width: 0.5px;
 	border-color: black;
 	padding: 10px 20px;
 	margin-top: 10px;
