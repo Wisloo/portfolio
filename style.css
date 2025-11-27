@@ -19,8 +19,7 @@ header {
 }
 
 .theme-toggle {
-	background-color: #b2c7d1;
-	border: none;
+	border: solid;
 	padding: 10px 20px;
 	margin-top: 10px;
 	cursor: pointer;
