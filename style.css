@@ -18,11 +18,11 @@ header {
 }
 
 button {
+	background-color: rgb(10, 102, 194);
 	padding: 10px 20px;
 	margin-top: 10px;
 	cursor: pointer;
 }
-
 
 /* Dark Theme */
 body.dark {
