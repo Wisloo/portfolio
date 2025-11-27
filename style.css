@@ -19,6 +19,7 @@ header {
 
 button {
 	background-color: #b2c7d1;
+	border: none;
 	padding: 10px 20px;
 	margin-top: 10px;
 	cursor: pointer;
