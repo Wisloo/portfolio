@@ -1,16 +1,24 @@
-const toggleButton = document.getElementsByClassName('theme-toggle')[0];
+// Simple Theme Toggle
+const toggleButton = document.querySelector('.theme-toggle');
 const body = document.body;
 
-// Check for saved theme preference or default to light mode
-const currentTheme = localStorage.getItem('theme') || 'light';
-if (currentTheme === 'dark') {
+// Check for saved theme
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
     body.classList.add('dark');
+    toggleButton.textContent = 'Toggle Light Mode';
 }
 
+// Toggle theme on button click
 toggleButton.addEventListener('click', () => {
     body.classList.toggle('dark');
     
-    // Save theme preference
-    const theme = body.classList.contains('dark') ? 'dark' : 'light';
-    localStorage.setItem('theme', theme);
+    // Update button text
+    if (body.classList.contains('dark')) {
+        toggleButton.textContent = 'Toggle Light Mode';
+        localStorage.setItem('theme', 'dark');
+    } else {
+        toggleButton.textContent = 'Toggle Dark Mode';
+        localStorage.setItem('theme', 'light');
+    }
 });
