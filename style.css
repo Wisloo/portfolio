@@ -82,11 +82,10 @@ section {
 	background-color: white;
 	border-radius: 8px;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	transition: box-shadow 0.3s ease;
 }
 
 section:hover {
-	transform: translateY(-5px);
 	box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
@@ -118,12 +117,13 @@ section h2 {
 	text-align: center;
 	border-radius: 5px;
 	font-weight: bold;
-	transition: transform 0.3s ease, background-color 0.3s ease;
+	transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-item:hover {
-	transform: translateY(-5px);
+	transform: translateY(-3px);
 	background-color: #2980b9;
+	box-shadow: 0 3px 10px rgba(52, 152, 219, 0.3);
 }
 
 /* Achievements Section */
@@ -140,11 +140,11 @@ section h2 {
 	border-radius: 8px;
 	text-align: center;
 	border: 1px solid #ddd;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .achievement-item:hover {
-	transform: translateY(-5px);
+	transform: translateY(-3px);
 	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
@@ -183,11 +183,11 @@ section h2 {
 	padding: 20px;
 	border-radius: 8px;
 	border: 1px solid #ddd;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .project-item:hover {
-	transform: translateY(-5px);
+	transform: translateY(-3px);
 	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
@@ -216,23 +216,36 @@ section h2 {
 
 /* Contact Section */
 #contact {
+	text-align: left;
+}
+
+#contact h2 {
 	text-align: center;
 }
 
 #contact p {
 	margin: 15px 0;
 	font-size: 1.1rem;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #contact a {
 	color: #3498db;
 	text-decoration: none;
 	transition: color 0.3s ease;
+	font-weight: 500;
 }
 
 #contact a:hover {
 	text-decoration: underline;
 	color: #2980b9;
+}
+
+#contact p strong {
+	color: #2c3e50;
+	font-weight: 600;
 }
 
 /* Footer */
