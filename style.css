@@ -105,9 +105,12 @@ section h2 {
 /* Skills Section */
 .skills-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-template-columns: repeat(3, 1fr);
 	gap: 15px;
 	margin-top: 20px;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .skill-item {
@@ -117,13 +120,11 @@ section h2 {
 	text-align: center;
 	border-radius: 5px;
 	font-weight: bold;
-	transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+	transition: background-color 0.3s ease;
 }
 
 .skill-item:hover {
-	transform: translateY(-3px);
 	background-color: #2980b9;
-	box-shadow: 0 3px 10px rgba(52, 152, 219, 0.3);
 }
 
 /* Achievements Section */
@@ -216,19 +217,13 @@ section h2 {
 
 /* Contact Section */
 #contact {
-	text-align: left;
-}
-
-#contact h2 {
 	text-align: center;
 }
 
 #contact p {
-	margin: 15px 0;
+	margin: 15px auto;
 	font-size: 1.1rem;
 	max-width: 600px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 #contact a {
@@ -325,7 +320,7 @@ body.dark #contact a {
 	}
 
 	.skills-container {
-		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.achievements-container,
@@ -353,7 +348,7 @@ body.dark #contact a {
 	}
 
 	.skills-container {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: repeat(2, 1fr);
 		gap: 10px;
 	}
 
