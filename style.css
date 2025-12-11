@@ -11,8 +11,7 @@ html {
 
 body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-	background-attachment: fixed;
+	background-color: #ffffff;
 	color: #333;
 	line-height: 1.6;
 	padding: 0;
