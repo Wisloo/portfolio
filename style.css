@@ -344,10 +344,9 @@ footer {
 	text-align: center;
 	padding: 30px 20px;
 	margin-top: 60px;
-	color: rgba(255, 255, 255, 0.8);
+	color: #666;
 	font-size: 0.95rem;
-	background: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(10px);
+	background: #f8f9fa;
 	border-radius: 15px;
 	max-width: 1200px;
 	margin-left: auto;
