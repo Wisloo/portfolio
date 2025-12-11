@@ -46,10 +46,6 @@ header {
 	margin-bottom: 10px;
 	color: #2c3e50;
 	font-weight: 700;
-	background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
 	animation: fadeIn 1s ease-out 0.3s both;
 }
 
@@ -86,21 +82,22 @@ header {
 .theme-toggle {
 	padding: 12px 30px;
 	margin-top: 25px;
-	background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+	background-color: #2196F3;
 	color: white;
 	border: none;
 	border-radius: 25px;
 	cursor: pointer;
 	font-size: 1rem;
 	font-weight: 600;
-	box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+	box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
 	transition: all 0.3s ease;
 	animation: fadeIn 1s ease-out 0.9s both;
 }
 
 .theme-toggle:hover {
+	background-color: #1976D2;
 	transform: translateY(-3px);
-	box-shadow: 0 6px 25px rgba(79, 172, 254, 0.6);
+	box-shadow: 0 6px 25px rgba(33, 150, 243, 0.4);
 }
 
 .theme-toggle:active {
