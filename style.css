@@ -60,15 +60,15 @@ header {
 	border-radius: 50%;
 	object-fit: cover;
 	margin: 20px 0;
-	border: 5px solid #4facfe;
-	box-shadow: 0 8px 25px rgba(79, 172, 254, 0.3);
+	border: 5px solid #2196F3;
+	box-shadow: 0 8px 25px rgba(33, 150, 243, 0.3);
 	transition: all 0.3s ease;
 	animation: fadeIn 1s ease-out 0.5s both;
 }
 
 #profile-img:hover {
 	transform: scale(1.08) rotate(3deg);
-	box-shadow: 0 12px 35px rgba(79, 172, 254, 0.5);
+	box-shadow: 0 12px 35px rgba(33, 150, 243, 0.5);
 }
 
 #course-year {
@@ -151,7 +151,7 @@ section h2::after {
 	transform: translateX(-50%);
 	width: 80px;
 	height: 4px;
-	background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+	background: #2196F3;
 	border-radius: 2px;
 }
 
@@ -182,21 +182,22 @@ section h2::after {
 }
 
 .skill-item {
-	background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+	background-color: #2196F3;
 	color: white;
 	padding: 18px;
 	text-align: center;
 	border-radius: 10px;
 	font-weight: 600;
 	font-size: 1.05rem;
-	box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+	box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
 	transition: all 0.3s ease;
 	cursor: default;
 }
 
 .skill-item:hover {
+	background-color: #1976D2;
 	transform: translateY(-5px) scale(1.05);
-	box-shadow: 0 8px 25px rgba(79, 172, 254, 0.5);
+	box-shadow: 0 8px 25px rgba(33, 150, 243, 0.5);
 }
 
 /* Achievements Section */
@@ -306,7 +307,7 @@ section h2::after {
 }
 
 #contact a {
-	color: #4facfe;
+	color: #2196F3;
 	text-decoration: none;
 	transition: all 0.3s ease;
 	font-weight: 600;
@@ -320,7 +321,7 @@ section h2::after {
 	height: 2px;
 	bottom: -2px;
 	left: 0;
-	background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+	background: #2196F3;
 	transition: width 0.3s ease;
 }
 
@@ -329,7 +330,7 @@ section h2::after {
 }
 
 #contact a:hover {
-	color: #00f2fe;
+	color: #1976D2;
 }
 
 #contact p strong {
@@ -365,10 +366,6 @@ body.dark header {
 
 body.dark #name {
 	color: #f5f5f5;
-	background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
 }
 
 body.dark section h2 {
@@ -396,8 +393,8 @@ body.dark .theme-toggle:hover {
 }
 
 body.dark #profile-img {
-	border-color: #4facfe;
-	box-shadow: 0 8px 25px rgba(79, 172, 254, 0.4);
+	border-color: #2196F3;
+	box-shadow: 0 8px 25px rgba(33, 150, 243, 0.4);
 }
 
 body.dark .achievement-item,
@@ -408,15 +405,19 @@ body.dark .project-item {
 
 body.dark .achievement-item:hover,
 body.dark .project-item:hover {
-	box-shadow: 0 12px 35px rgba(79, 172, 254, 0.3);
+	box-shadow: 0 12px 35px rgba(33, 150, 243, 0.3);
 }
 
 body.dark .achievement-item p,
 body.dark .project-item p,
 body.dark #course-year,
-body.dark #contact p,
+body.dark #contact p {
+	color: #ccc;
+}
+
 body.dark footer {
 	color: #ccc;
+	background: rgba(44, 44, 62, 0.8);
 }
 
 body.dark #about p {
@@ -424,11 +425,11 @@ body.dark #about p {
 }
 
 body.dark #contact a {
-	color: #4facfe;
+	color: #2196F3;
 }
 
 body.dark #contact a:hover {
-	color: #00f2fe;
+	color: #64B5F6;
 }
 
 /* Responsive Design */
