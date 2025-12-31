@@ -502,6 +502,102 @@ body.dark #contact a:hover {
 	color: #A5D6A7;
 }
 
+/* Social Links */
+.social-links {
+	margin-top: 40px;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.social-links h3 {
+	font-size: 1.5rem;
+	margin-bottom: 30px;
+	color: #2c3e50;
+	font-weight: 700;
+}
+
+.social-link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	padding: 15px 35px;
+	margin: 10px;
+	border-radius: 12px;
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	font-size: 1.1rem;
+	transition: all 0.3s ease;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+	position: relative;
+	overflow: hidden;
+}
+
+.social-link::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.2);
+	transition: left 0.4s ease;
+}
+
+.social-link:hover::before {
+	left: 100%;
+}
+
+.social-link:hover {
+	transform: translateY(-5px) scale(1.05);
+	box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+}
+
+.social-link:active {
+	transform: translateY(-2px) scale(1.02);
+}
+
+.social-link i {
+	font-size: 1.5rem;
+	transition: transform 0.3s ease;
+}
+
+.social-link:hover i {
+	transform: rotate(10deg) scale(1.1);
+}
+
+.facebook {
+	background: linear-gradient(135deg, #1877F2 0%, #0e5fc2 100%);
+}
+
+.facebook:hover {
+	background: linear-gradient(135deg, #0e5fc2 0%, #0a4a9e 100%);
+	box-shadow: 0 8px 30px rgba(24, 119, 242, 0.4);
+}
+
+.instagram {
+	background: linear-gradient(135deg, #E4405F 0%, #C13584 50%, #833AB4 100%);
+}
+
+.instagram:hover {
+	background: linear-gradient(135deg, #C13584 0%, #833AB4 50%, #5B51D8 100%);
+	box-shadow: 0 8px 30px rgba(193, 53, 132, 0.4);
+}
+
+.linkedin {
+	background: linear-gradient(135deg, #0077B5 0%, #005885 100%);
+}
+
+.linkedin:hover {
+	background: linear-gradient(135deg, #005885 0%, #004562 100%);
+	box-shadow: 0 8px 30px rgba(0, 119, 181, 0.4);
+}
+
+body.dark .social-links h3 {
+	color: #f5f5f5;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
 	body {
