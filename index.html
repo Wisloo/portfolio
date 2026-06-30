@@ -8,11 +8,29 @@
       <link rel="stylesheet" href="style.css">
    </head>
    <body>
+      <div class="particles">
+         <div class="particle"></div>
+         <div class="particle"></div>
+         <div class="particle"></div>
+         <div class="particle"></div>
+         <div class="particle"></div>
+         <div class="particle"></div>
+         <div class="particle"></div>
+         <div class="particle"></div>
+         <div class="particle"></div>
+         <div class="particle"></div>
+      </div>
       <header>
-         <h1 id="name">Louis Antonio D. Lapayag</h1>
-         <img src="assets/images/profileImage.jpg" alt="Profile Picture" id="profile-img">
-         <p id="course-year">Computer Science - 2nd Year</p>
-         <button class="theme-toggle">Toggle Dark Mode</button>
+         <div class="header-content">
+            <h1 id="name">Louis Antonio D. Lapayag</h1>
+            <p class="tagline">Building the Future, One Line of Code at a Time</p>
+            <img src="assets/images/profileImage.jpg" alt="Profile Picture" id="profile-img">
+            <p id="course-year">Computer Science - 2nd Year</p>
+            <div class="header-buttons">
+               <button class="theme-toggle">Toggle Dark Mode</button>
+               <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+         </div>
       </header>
 
       <section id="about">
@@ -25,12 +43,58 @@
       <section id="skills">
          <h2>My Skills</h2>
          <div class="skills-container">
-            <div class="skill-item">C++</div>
-            <div class="skill-item">Java</div>
-            <div class="skill-item">C#</div>
-            <div class="skill-item">HTML & CSS</div>
-            <div class="skill-item">JavaScript</div>
-            <div class="skill-item">Git</div>
+            <div class="skill-item">
+               <i class="fab fa-cuttlefish" style="color: #00599C;"></i>
+               <span>C++</span>
+            </div>
+            <div class="skill-item">
+               <i class="fab fa-java" style="color: #007396;"></i>
+               <span>Java</span>
+            </div>
+            <div class="skill-item">
+               <i class="fas fa-hashtag" style="color: #512BD4;"></i>
+               <span>C#</span>
+            </div>
+            <div class="skill-item">
+               <i class="fab fa-python" style="color: #3776AB;"></i>
+               <span>Python</span>
+            </div>
+            <div class="skill-item">
+               <i class="fab fa-html5" style="color: #E34F26;"></i>
+               <span>HTML & CSS</span>
+            </div>
+            <div class="skill-item">
+               <i class="fab fa-js" style="color: #F7DF1E;"></i>
+               <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+               <i class="fab fa-git-alt" style="color: #F05032;"></i>
+               <span>Git</span>
+            </div>
+            <div class="skill-item">
+               <i class="fab fa-react" style="color: #61DAFB;"></i>
+               <span>Next.js</span>
+            </div>
+            <div class="skill-item">
+               <i class="fab fa-node-js" style="color: #339933;"></i>
+               <span>Node.js</span>
+            </div>
+            <div class="skill-item">
+               <i class="fab fa-microsoft" style="color: #00A4EF;"></i>
+               <span>ASP.NET Core</span>
+            </div>
+            <div class="skill-item">
+               <i class="fas fa-wind" style="color: #38BDF8;"></i>
+               <span>Tailwind CSS</span>
+            </div>
+            <div class="skill-item">
+               <i class="fas fa-database" style="color: #336791;"></i>
+               <span>PostgreSQL</span>
+            </div>
+            <div class="skill-item">
+               <i class="fas fa-mobile-alt" style="color: #02569B;"></i>
+               <span>Flutter</span>
+            </div>
          </div>
       </section>
 
@@ -52,6 +116,21 @@
                <h3>C# Certificate</h3>
                <p>Certification in C# programming</p>
             </div>
+            <div class="achievement-item">
+               <img src="assets/images/HCI/InputAndInteraction-1.png" alt="HCI Input and Interaction" class="certificate-img">
+               <h3>Input and Interaction</h3>
+               <p>Human-Computer Interaction Course Certification</p>
+            </div>
+            <div class="achievement-item">
+               <img src="assets/images/HCI/IntroductionToUserExperienceDesign-1.png" alt="HCI UX Design" class="certificate-img">
+               <h3>Introduction to UX Design</h3>
+               <p>Human-Computer Interaction Course Certification</p>
+            </div>
+            <div class="achievement-item">
+               <img src="assets/images/HCI/Lapayag.jpg" alt="HCI Course Completion" class="certificate-img">
+               <h3>HCI Course Completion</h3>
+               <p>Human-Computer Interaction Course Certificate</p>
+            </div>
          </div>
       </section>
       
@@ -62,16 +141,19 @@
                <img src="assets/images/FinSync.png" alt="FinSync Project" class="project-img">
                <h3>FinSync</h3>
                <p>An income and expense tracker with a GUI built using C++ and the Windows API. My first computer science project from freshman year.</p>
+               <a href="https://github.com/Wisloo/FinSync.git" target="_blank" class="project-link">View on GitHub</a>
             </div>
             <div class="project-item">
                <img src="assets/images/SAGIP.png" alt="Sagip Project" class="project-img">
                <h3>SAGIP</h3>
                <p>A barangay financial assistance system that helps manage and distribute financial aid to community members efficiently.</p>
+               <a href="https://github.com/Wisloo/SAGIP.git" target="_blank" class="project-link">View on GitHub</a>
             </div>
             <div class="project-item">
                <img src="assets/images/NUTRIPLANPROPLUS.png" alt="NutriPlan Pro Plus" class="project-img">
                <h3>NutriPlan Pro Plus</h3>
                <p>A meal planning application that allows users to create personalized meal plans based on their dietary needs and preferences.</p>
+               <a href="https://github.com/Wisloo/NutriPlanProPlus.git" target="_blank" class="project-link">View on GitHub</a>
             </div>
             <div class="project-item">
                <img src="assets/images/PATHNOTTAKEN.png" alt="PathNotTaken" class="project-img">
@@ -79,41 +161,61 @@
                <p>A career path discovery web app that uncovers non-obvious career opportunities by analyzing a user's skills, interests, and educational background — from college degrees to associate programs.</p>
                <a href="https://path-not-taken.vercel.app/" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 20px; background-color: #10b981; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">View App</a>
             </div>
+            <div class="project-item">
+               <img src="assets/images/MyCreditFilipinas/MyCreditFilipinas.png" alt="MyCreditFilipinas" class="project-img">
+               <h3>MyCreditFilipinas</h3>
+               <p>A credit management application designed for Filipinos to track and manage their credit scores and financial health effectively.</p>
+               <a href="https://mycredit-filipinas-8w5m7tsq2-louis-antonio-lapayags-projects.vercel.app/" target="_blank" class="project-link">View App</a>
+            </div>
+            <div class="project-item">
+               <img src="assets/images/ScrapChefPhotos/RecipeIdeasMenu.png" alt="ScrapChef" class="project-img">
+               <h3>ScrapChef</h3>
+               <p>An innovative application that turns food scraps into usable recipes. Uses GPT-4 Vision for scanning food scraps, IoT ESP32 for logging weight, and SBERT for identifying recipes based on identified scraps.</p>
+               <a href="https://github.com/Wisloo/ScrapChef.git" target="_blank" class="project-link">View on GitHub</a>
+            </div>
          </div>
       </section>
 
       <section id="projects-web">
-         <h2>Web Development Projects</h2>
-         <div class="projects-container">
-            <div class="project-item">
-               <img src="assets/images/Greensense.png" alt="GreenSense Landing Page" class="project-img">
-               <h3>GreenSense Landing Page</h3>
-               <p>A responsive landing page for a smart farm management platform. Features modern CSS design, Grid/Flexbox layouts, and mobile-first responsive design.</p>
-               <a href="greensense.html" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">View Landing Page</a>
+         <h2>Projects</h2>
+         <div class="folder-container">
+            <div class="folder-tab collapsed">
+               <i class="fas fa-folder"></i>
+               <span>Web Assessments</span>
             </div>
-            <div class="project-item">
-               <img src="assets/images/RemoveSpaces.png" alt="Remove Spaces" class="project-img">
-               <h3>Remove Spaces</h3>
-               <p>A JavaScript application that removes all spaces from text input. A simple utility tool demonstrating string manipulation with an interactive user interface.</p>
-               <a href="RemoveSpaces/mp1-louislapayagRemoveSpaces/assets/index.html" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 20px; background-color: #f5576c; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">Try It Out</a>
-            </div>
-            <div class="project-item">
-               <img src="assets/images/SearchWord.png" alt="Search Word" class="project-img">
-               <h3>Search Word</h3>
-               <p>An interactive word search application that finds and highlights specific words within sentences. Features real-time search functionality with a clean, user-friendly interface.</p>
-               <a href="SearchWord/mp2-louislapayagSearchWord/assets/index.html" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 20px; background-color: #00b4d8; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">Try It Out</a>
-            </div>
-            <div class="project-item">
-               <img src="assets/images/TailwindGuide.png" alt="Tailwind CSS Tutorial" class="project-img">
-               <h3>Tailwind CSS Tutorial</h3>
-               <p>A comprehensive guide to mastering utility-first CSS. Learn how to build beautiful, responsive websites faster with Tailwind CSS framework.</p>
-               <a href="https://lapayag-webapp-demo.vercel.app/" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 20px; background-color: #38bdf8; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">View Tutorial</a>
-            </div>
-            <div class="project-item">
-               <img src="assets/images/NewsFlash.png" alt="NewsFlash" class="project-img">
-               <h3>NewsFlash</h3>
-               <p>A modern news aggregator application delivering fresh news articles from various categories and regions. Features a clean interface with filtering options for personalized news browsing.</p>
-               <a href="https://newsflash-eight.vercel.app/" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 20px; background-color: #6366f1; color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">View</a>
+            <div class="folder-content collapsed">
+               <div class="projects-container">
+                  <div class="project-item">
+                     <img src="assets/images/Greensense.png" alt="GreenSense Landing Page" class="project-img">
+                     <h3>GreenSense Landing Page</h3>
+                     <p>A responsive landing page for a smart farm management platform. Features modern CSS design, Grid/Flexbox layouts, and mobile-first responsive design.</p>
+                     <a href="greensense.html" target="_blank" class="project-link">View Landing Page</a>
+                  </div>
+                  <div class="project-item">
+                     <img src="assets/images/RemoveSpaces.png" alt="Remove Spaces" class="project-img">
+                     <h3>Remove Spaces</h3>
+                     <p>A JavaScript application that removes all spaces from text input. A simple utility tool demonstrating string manipulation with an interactive user interface.</p>
+                     <a href="RemoveSpaces/mp1-louislapayagRemoveSpaces/assets/index.html" target="_blank" class="project-link">Try It Out</a>
+                  </div>
+                  <div class="project-item">
+                     <img src="assets/images/SearchWord.png" alt="Search Word" class="project-img">
+                     <h3>Search Word</h3>
+                     <p>An interactive word search application that finds and highlights specific words within sentences. Features real-time search functionality with a clean, user-friendly interface.</p>
+                     <a href="SearchWord/mp2-louislapayagSearchWord/assets/index.html" target="_blank" class="project-link">Try It Out</a>
+                  </div>
+                  <div class="project-item">
+                     <img src="assets/images/TailwindGuide.png" alt="Tailwind CSS Tutorial" class="project-img">
+                     <h3>Tailwind CSS Tutorial</h3>
+                     <p>A comprehensive guide to mastering utility-first CSS. Learn how to build beautiful, responsive websites faster with Tailwind CSS framework.</p>
+                     <a href="https://lapayag-webapp-demo.vercel.app/" target="_blank" class="project-link">View Tutorial</a>
+                  </div>
+                  <div class="project-item">
+                     <img src="assets/images/NewsFlash.png" alt="NewsFlash" class="project-img">
+                     <h3>NewsFlash</h3>
+                     <p>A modern news aggregator application delivering fresh news articles from various categories and regions. Features a clean interface with filtering options for personalized news browsing.</p>
+                     <a href="https://newsflash-eight.vercel.app/" target="_blank" class="project-link">View</a>
+                  </div>
+               </div>
             </div>
          </div>
       </section>
