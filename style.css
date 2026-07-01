@@ -497,7 +497,7 @@ body.light .hci-badge {
 
 /* ─── Strong, visible gold border ─── */
 .featured-project {
-    border: 2px solid #f59e0b !important;          /* thicker, solid gold */
+    border: 2px solid #f59e0b !important;
     box-shadow: 0 0 20px rgba(245, 158, 11, 0.15), inset 0 0 20px rgba(245, 158, 11, 0.05) !important;
     transition: all 0.3s ease;
 }
@@ -663,20 +663,17 @@ body.light .social-link i {
 .social-link:hover i {
     transform: rotate(6deg) scale(1.08);
 }
-.facebook {
-    background: linear-gradient(135deg, #1877F2 0%, #0e5fc2 100%);
+
+/* ─── GitHub social button ─── */
+.github {
+    background: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
 }
-.facebook:hover {
-    background: linear-gradient(135deg, #0e5fc2 0%, #0a4a9e 100%);
-    box-shadow: 0 8px 30px rgba(24, 119, 242, 0.4);
+.github:hover {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
 }
-.instagram {
-    background: linear-gradient(135deg, #E4405F 0%, #C13584 50%, #833AB4 100%);
-}
-.instagram:hover {
-    background: linear-gradient(135deg, #C13584 0%, #833AB4 50%, #5B51D8 100%);
-    box-shadow: 0 8px 30px rgba(193, 53, 132, 0.4);
-}
+
+/* ─── LinkedIn social button ─── */
 .linkedin {
     background: linear-gradient(135deg, #0077B5 0%, #005885 100%);
 }
