@@ -21,18 +21,19 @@ toggleButton.addEventListener('click', () => {
    }
 });
 
-// Image Modal
+// Image Modal – now includes .screenshot-img
 const modal = document.getElementById('imageModal');
 const modalImg = document.getElementById('modalImage');
 const closeBtn = document.querySelector('.close');
 
-document.querySelectorAll('.project-img, .certificate-img').forEach(img => {
+document.querySelectorAll('.project-img, .certificate-img, .screenshot-img').forEach(img => {
    img.style.cursor = 'pointer';
    img.addEventListener('click', function() {
       modal.style.display = 'block';
       modalImg.src = this.src;
    });
 });
+
 closeBtn.addEventListener('click', () => { modal.style.display = 'none'; });
 modal.addEventListener('click', (e) => {
    if (e.target === modal) modal.style.display = 'none';
