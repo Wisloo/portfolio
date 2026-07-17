@@ -1,22 +1,23 @@
 // Theme Toggle
 const toggleButton = document.querySelector('.theme-toggle');
+const toggleIcon = toggleButton.querySelector('i');
 const body = document.body;
 
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'light') {
    body.classList.add('light');
-   toggleButton.textContent = 'Toggle Dark Mode';
+   toggleIcon.className = 'fas fa-sun';
 } else {
-   toggleButton.textContent = 'Toggle Light Mode';
+   toggleIcon.className = 'fas fa-moon';
 }
 
 toggleButton.addEventListener('click', () => {
    body.classList.toggle('light');
    if (body.classList.contains('light')) {
-      toggleButton.textContent = 'Toggle Dark Mode';
+      toggleIcon.className = 'fas fa-sun';
       localStorage.setItem('theme', 'light');
    } else {
-      toggleButton.textContent = 'Toggle Light Mode';
+      toggleIcon.className = 'fas fa-moon';
       localStorage.setItem('theme', 'dark');
    }
 });
