@@ -1,18 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #f0f0f0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #1a1d23;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #06868f;
-    color: white;
+.card {
+    background: #242830;
+    border: 1px solid #333842;
+    border-radius: 12px;
+    padding: 40px 36px;
+    width: 100%;
+    max-width: 520px;
+}
+
+.back-link {
+    display: inline-block;
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-bottom: 24px;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: #e8a849;
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #e8e6e3;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    color: #8b8d94;
+    font-size: 0.92rem;
+    margin-bottom: 28px;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.input-row input {
+    flex: 1;
+    padding: 12px 14px;
+    background: #1a1d23;
+    border: 1px solid #333842;
+    border-radius: 8px;
+    color: #e8e6e3;
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-row input::placeholder {
+    color: #555a64;
+}
+
+.input-row input:focus {
+    border-color: #e8a849;
+}
+
+.input-row button {
+    padding: 12px 20px;
+    background: #e8a849;
+    color: #1a1d23;
     border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
     cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s;
 }
 
-input {
-    padding: 10px;
-    width: 300px;
+.input-row button:hover {
+    background: #d49535;
+}
+
+.output-area {
+    background: #1a1d23;
+    border: 1px solid #333842;
+    border-radius: 8px;
+    padding: 16px;
+    min-height: 56px;
+}
+
+.output-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #555a64;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#output {
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 0.9rem;
+    color: #e8a849;
+    word-break: break-all;
+}
+
+@media (max-width: 500px) {
+    .input-row {
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 28px 20px;
+    }
 }
