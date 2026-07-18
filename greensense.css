@@ -5,383 +5,218 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #2d2a26;
+  background-color: #f5f0e8;
   line-height: 1.6;
-  color: #333;
-  background-color: #ffffff;
 }
 
 h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #2c3e50;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #2d2a26;
 }
 
-/* Hero Section */
+/* ─── Hero ─── */
 .hero {
-  background-color: #3498db;
-  color: white;
-  padding: 60px 20px;
+  background-color: #4a7c59;
+  color: #f5f0e8;
+  padding: 80px 24px 72px;
   text-align: center;
 }
 
-.hero-title {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+.hero-inner {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.hero-tagline {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+.hero-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 24px;
 }
 
-.hero-description {
-  font-size: 1rem;
-  margin-bottom: 20px;
+.hero h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
 }
 
-.hero-icon {
-  font-size: 5rem;
-  margin-top: 20px;
+.hero p {
+  font-size: 1.05rem;
+  opacity: 0.85;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
-/* Features Section */
+/* ─── Features ─── */
 .features {
-  padding: 50px 20px;
-  background-color: #f8f9fa;
+  padding: 72px 24px;
+  text-align: center;
+  background: #f5f0e8;
 }
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  max-width: 1000px;
+  max-width: 740px;
   margin: 0 auto;
+  text-align: left;
 }
 
 .feature-card {
-  background: white;
-  padding: 25px;
-  text-align: center;
-  border: 4px solid #6366f1;
-  border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.2);
+  background: #fffdf9;
+  border: 1px solid #e0d9cc;
+  border-radius: 10px;
+  padding: 28px 24px;
 }
 
-.feature-icon {
-  font-size: 3rem;
-  margin-bottom: 15px;
+.feature-accent {
+  width: 32px;
+  height: 3px;
+  background: #c17f59;
+  border-radius: 2px;
+  margin-bottom: 16px;
 }
 
 .feature-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #2c3e50;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2d2a26;
 }
 
 .feature-card p {
-  color: #666;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
+  color: #5a554f;
+  line-height: 1.55;
 }
 
-/* Visual Section */
-.visual-section {
-  padding: 50px 20px;
-  background-color: #ecf0f1;
-  text-align: center;
-}
-
-.dashboard-mockup {
-  background: white;
-  max-width: 500px;
-  margin: 30px auto;
-  border: 2px solid #bdc3c7;
-}
-
-.mockup-header {
-  background: #3498db;
-  padding: 10px;
-}
-
-.mockup-content {
-  padding: 30px;
-}
-
-.mockup-stat {
-  padding: 15px;
-  background: #f8f9fa;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-}
-
-.stat-label {
-  font-size: 0.9rem;
-  color: #7f8c8d;
-  margin-bottom: 5px;
-}
-
-.stat-value {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #27ae60;
-}
-
-.visual-caption {
-  margin-top: 20px;
-  color: #7f8c8d;
-  font-style: italic;
-}
-
-/* Problems Section */
-.problems {
-  padding: 50px 20px;
-  background-color: #f8f9fa;
-}
-
-.problems-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.problem-card {
-  background: #fff3cd;
-  padding: 20px;
-  border-left: 4px solid #f39c12;
-}
-
-.problem-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-  color: #2c3e50;
-}
-
-.problem-card p {
-  color: #666;
-  font-size: 0.95rem;
-}
-
-/* How It Works Section */
+/* ─── How It Works ─── */
 .how-it-works {
-  padding: 50px 20px;
-  background-color: #3498db;
-  color: white;
+  padding: 72px 24px;
+  background: #ebe5d9;
   text-align: center;
 }
 
-.how-it-works h2 {
-  color: white;
-}
-
-.steps-container {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  max-width: 1000px;
+.steps {
+  max-width: 480px;
   margin: 0 auto;
+  text-align: left;
 }
 
 .step {
-  background: white;
-  color: #333;
-  padding: 20px;
-  flex: 1;
-  max-width: 200px;
-  border: 2px solid #2980b9;
-}
-
-.step-number {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #e74c3c;
-}
-
-.step h3 {
-  font-size: 1.1rem;
-  margin-bottom: 8px;
-  color: #2c3e50;
-}
-
-.step p {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-.step-arrow {
-  font-size: 1.5rem;
-  color: white;
-}
-
-/* Target Users Section */
-.target-users {
-  padding: 50px 20px;
-  background-color: #ecf0f1;
-}
-
-.users-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+  align-items: flex-start;
+  padding: 20px 0;
+  border-bottom: 1px solid #d6cfc2;
 }
 
-.user-card {
-  background: white;
-  padding: 25px;
-  text-align: center;
-  border: 4px solid #6366f1;
-  border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.2);
+.step:last-child {
+  border-bottom: none;
 }
 
-.user-icon {
-  font-size: 3rem;
-  margin-bottom: 15px;
-}
-
-.user-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-  color: #2c3e50;
-}
-
-.user-card p {
-  color: #666;
-  font-size: 0.9rem;
-}
-
-/* Benefits Section */
-.benefits {
-  padding: 50px 20px;
-  background: #f8f9fa;
-}
-
-.benefits-list {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.benefit-item {
-  padding: 15px;
-  background: white;
-  margin-bottom: 10px;
-  border-left: 4px solid #6366f1;
-  border-radius: 8px;
-}
-
-.benefit-icon {
-  font-size: 1.2rem;
-  color: #27ae60;
-  margin-right: 10px;
-}
-
-.benefit-text {
-  font-size: 1rem;
-  color: #333;
-}
-
-/* Final CTA Section */
-.cta-final {
-  padding: 50px 20px;
-  background-color: #27ae60;
-  color: white;
-  text-align: center;
-}
-
-.cta-content h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: white;
-}
-
-.cta-content p {
-  font-size: 1rem;
-}
-
-/* Footer */
-.footer {
-  background-color: #34495e;
-  color: white;
-  padding: 30px 20px;
-}
-
-.footer-content {
+.step-marker {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: #4a7c59;
+  color: #f5f0e8;
+  border-radius: 50%;
   display: flex;
-  justify-content: space-around;
-  max-width: 1000px;
-  margin: 0 auto 20px;
-}
-
-.footer-section h4 {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-.footer-section p {
-  color: #bdc3c7;
-  font-size: 0.9rem;
-  margin-bottom: 5px;
-}
-
-.social-links {
-  display: flex;
-  gap: 10px;
-}
-
-.social-link {
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px;
-  background: #2c3e50;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid #2c3e50;
-  color: #bdc3c7;
+  align-items: center;
+  justify-content: center;
   font-size: 0.85rem;
+  font-weight: 600;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2rem;
+.step-body h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #2d2a26;
+}
+
+.step-body p {
+  font-size: 0.9rem;
+  color: #5a554f;
+}
+
+/* ─── CTA ─── */
+.cta {
+  padding: 64px 24px;
+  background: #3d5a3d;
+  text-align: center;
+  color: #f5f0e8;
+}
+
+.cta-inner {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cta h2 {
+  color: #f5f0e8;
+  margin-bottom: 12px;
+}
+
+.cta p {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* ─── Footer ─── */
+.footer {
+  padding: 24px;
+  background: #2d2a26;
+  color: #8a8378;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  font-weight: 600;
+  color: #b5ada3;
+  font-size: 0.9rem;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 1.8rem;
   }
 
-  .hero-icon {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  .features-grid,
-  .problems-grid,
-  .users-grid {
+  .features-grid {
     grid-template-columns: 1fr;
   }
 
-  .steps-container {
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .footer-inner {
     flex-direction: column;
-  }
-
-  .step {
-    max-width: 100%;
-  }
-
-  .step-arrow {
-    transform: rotate(90deg);
-  }
-
-  .footer-content {
-    flex-direction: column;
+    gap: 8px;
     text-align: center;
   }
 }
