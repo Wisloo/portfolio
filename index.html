@@ -21,9 +21,8 @@
     <nav class="sticky-nav" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="#scrapchef">ScrapChef</a>
-        <a href="#achievements">Certifications</a>
         <a href="#projects-apps">Projects</a>
+        <a href="#achievements">Certifications</a>
         <a href="#contact">Contact</a>
         <button class="theme-toggle" aria-label="Toggle theme">
             <i class="fas fa-moon"></i>
@@ -48,12 +47,27 @@
     <!-- ─── About ─── -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I'm Louis, a 2nd-year Computer Science student who loves coding! I'm currently learning web development and
-            building projects that solve real problems.</p>
-        <p>I enjoy creating websites and applications, and putting theory into practice. I am knowledgeable in C++, Java,
-            C#, and always curious about learning new technologies.</p>
-        <p>Beyond programming, I'm passionate about Music. I believe that great technology should make people's lives
-            better.</p>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>I'm Louis, a 2nd-year Computer Science student. I build web and desktop apps — mostly things that
+                    solve real problems for people around me. Right now I'm focused on web development with Next.js and
+                    Tailwind, and I'm always picking up new tools.</p>
+                <p>I've worked with C++, Java, C#, and JavaScript across school projects and personal builds.</p>
+            </div>
+            <div class="about-aside">
+                <h3>Currently working with</h3>
+                <div class="aside-tags">
+                    <span>Next.js</span>
+                    <span>Tailwind</span>
+                    <span>TypeScript</span>
+                    <span>PostgreSQL</span>
+                    <span>Firebase</span>
+                    <span>Flutter</span>
+                </div>
+                <h3>Outside of code</h3>
+                <p class="aside-text">Music</p>
+            </div>
+        </div>
     </section>
 
     <!-- ─── Skills ─── -->
@@ -92,67 +106,6 @@
                     <div class="skill-item"><i class="fas fa-database icon-postgres"></i><span>PostgreSQL</span></div>
                     <div class="skill-item"><i class="fas fa-mobile-alt icon-flutter"></i><span>Flutter</span></div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ─── HCI Final Project: ScrapChef (separate, on top) ─── -->
-    <section id="scrapchef" class="featured-section">
-        <h2>🎓 HCI Final Project — ScrapChef</h2>
-        <div class="scrapchef-intro">
-            <p>
-                <strong>ScrapChef</strong> turns food scraps into usable recipes using GPT-4 Vision, 
-                an IoT ESP32 for logging weight, and SBERT for recipe identification. 
-                Built with <strong>Flutter</strong> &amp; <strong>Firebase</strong>.
-            </p>
-            <a href="https://github.com/Wisloo/ScrapChef.git" target="_blank" class="project-link">View on GitHub</a>
-        </div>
-        <div class="screenshot-grid">
-            <img src="assets/images/ScrapChefPhotos/MainPage.png" alt="Main Page" class="screenshot-img" />
-            <img src="assets/images/ScrapChefPhotos/LoginPage.png" alt="Login Page" class="screenshot-img" />
-            <img src="assets/images/ScrapChefPhotos/CreateAccountPage.png" alt="Create Account" class="screenshot-img" />
-            <img src="assets/images/ScrapChefPhotos/ScanScrapPage.png" alt="Scan Scrap" class="screenshot-img" />
-            <img src="assets/images/ScrapChefPhotos/ScrapBinPage.png" alt="Scrap Bin" class="screenshot-img" />
-            <img src="assets/images/ScrapChefPhotos/RecipeIdeasMenu.png" alt="Recipe Ideas" class="screenshot-img" />
-            <img src="assets/images/ScrapChefPhotos/IngredientsPage.png" alt="Ingredients" class="screenshot-img" />
-            <img src="assets/images/ScrapChefPhotos/SavedRecipesPage.png" alt="Saved Recipes" class="screenshot-img" />
-            <img src="assets/images/ScrapChefPhotos/SettingsPage.png" alt="Settings" class="screenshot-img" />
-        </div>
-    </section>
-
-    <!-- ─── Certifications ─── -->
-    <section id="achievements">
-        <h2>Certifications</h2>
-        <div class="achievements-container">
-            <div class="achievement-item">
-                <img src="assets/images/CppCertifLapayag.jpg" alt="C++ Certificate" class="certificate-img" />
-                <h3>C++ Certificate</h3>
-                <p>Certification in C++ programming</p>
-            </div>
-            <div class="achievement-item">
-                <img src="assets/images/JavaSpecialistLapayag.jpg" alt="Java Certificate" class="certificate-img" />
-                <h3>Java Certificate</h3>
-                <p>Certification in Java programming</p>
-            </div>
-            <div class="achievement-item">
-                <img src="assets/images/CsharpCertifLapayag.jpg" alt="C# Certificate" class="certificate-img" />
-                <h3>C# Certificate</h3>
-                <p>Certification in C# programming</p>
-            </div>
-            <div class="achievement-item">
-                <img src="assets/images/HCI/InputAndInteraction-1.png" alt="HCI Input and Interaction" class="certificate-img" />
-                <h3>Input and Interaction</h3>
-                <p>Human-Computer Interaction Course</p>
-            </div>
-            <div class="achievement-item">
-                <img src="assets/images/HCI/IntroductionToUserExperienceDesign-1.png" alt="HCI UX Design" class="certificate-img" />
-                <h3>Introduction to UX Design</h3>
-                <p>Human-Computer Interaction Course</p>
-            </div>
-            <div class="achievement-item">
-                <img src="assets/images/HCI/Lapayag.jpg" alt="HCI Course Completion" class="certificate-img" />
-                <h3>HCI Course Completion</h3>
-                <p>Human-Computer Interaction Certificate</p>
             </div>
         </div>
     </section>
@@ -200,6 +153,14 @@
                 <p>A point-of-sale (POS) system for Filipino businesses to manage sales, inventory, and customer credit.</p>
                 <div class="tech-tags"><span>Next.js</span><span>Node.js</span><span>Tailwind</span><span>PostgreSQL</span></div>
                 <a href="https://mycredit-filipinas-8w5m7tsq2-louis-antonio-lapayags-projects.vercel.app/" target="_blank" class="project-link">View App</a>
+            </div>
+
+            <div class="project-item">
+                <img src="assets/images/ScrapChefPhotos/MainPage.png" alt="ScrapChef" class="project-img" />
+                <h3>ScrapChef</h3>
+                <p>HCI final project — turns food scraps into recipes using GPT-4 Vision and an IoT weight sensor. Built with Flutter and Firebase.</p>
+                <div class="tech-tags"><span>Flutter</span><span>Firebase</span><span>GPT-4 Vision</span><span>IoT</span></div>
+                <a href="https://github.com/Wisloo/ScrapChef.git" target="_blank" class="project-link">View on GitHub</a>
             </div>
 
         </div>
@@ -251,6 +212,43 @@
                         <a href="https://newsflash-eight.vercel.app/" target="_blank" class="project-link">View</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Certifications ─── -->
+    <section id="achievements">
+        <h2>Certifications</h2>
+        <div class="achievements-container">
+            <div class="achievement-item">
+                <img src="assets/images/CppCertifLapayag.jpg" alt="C++ Certificate" class="certificate-img" />
+                <h3>C++ Certificate</h3>
+                <p>Certification in C++ programming</p>
+            </div>
+            <div class="achievement-item">
+                <img src="assets/images/JavaSpecialistLapayag.jpg" alt="Java Certificate" class="certificate-img" />
+                <h3>Java Certificate</h3>
+                <p>Certification in Java programming</p>
+            </div>
+            <div class="achievement-item">
+                <img src="assets/images/CsharpCertifLapayag.jpg" alt="C# Certificate" class="certificate-img" />
+                <h3>C# Certificate</h3>
+                <p>Certification in C# programming</p>
+            </div>
+            <div class="achievement-item">
+                <img src="assets/images/HCI/InputAndInteraction-1.png" alt="HCI Input and Interaction" class="certificate-img" />
+                <h3>Input and Interaction</h3>
+                <p>Human-Computer Interaction Course</p>
+            </div>
+            <div class="achievement-item">
+                <img src="assets/images/HCI/IntroductionToUserExperienceDesign-1.png" alt="HCI UX Design" class="certificate-img" />
+                <h3>Introduction to UX Design</h3>
+                <p>Human-Computer Interaction Course</p>
+            </div>
+            <div class="achievement-item">
+                <img src="assets/images/HCI/Lapayag.jpg" alt="HCI Course Completion" class="certificate-img" />
+                <h3>HCI Course Completion</h3>
+                <p>Human-Computer Interaction Certificate</p>
             </div>
         </div>
     </section>

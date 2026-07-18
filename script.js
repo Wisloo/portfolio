@@ -27,7 +27,7 @@ const modal = document.getElementById('imageModal');
 const modalImg = document.getElementById('modalImage');
 const closeBtn = document.querySelector('.close');
 
-document.querySelectorAll('.project-img, .certificate-img, .screenshot-img').forEach(img => {
+document.querySelectorAll('.project-img, .certificate-img').forEach(img => {
    img.style.cursor = 'pointer';
    img.addEventListener('click', function() {
       modal.style.display = 'block';
@@ -72,7 +72,7 @@ window.addEventListener('scroll', () => {
    const scrolled = window.pageYOffset;
    const header = document.querySelector('header');
    if (header) {
-      header.style.transform = `translateY(${-scrolled * 0.3}px)`;
+      header.style.transform = `translateY(${-scrolled * 0.15}px)`;
    }
 });
 
