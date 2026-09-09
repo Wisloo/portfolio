@@ -2,6 +2,13 @@
 const toggleButton = document.querySelector('.theme-toggle');
 const toggleIcon = toggleButton.querySelector('i');
 const body = document.body;
+const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+
+function applyThemeColor() {
+    if (metaThemeColor) {
+        metaThemeColor.content = body.classList.contains('light') ? '#f5f7fa' : '#0a0a0f';
+    }
+}
 
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'light') {
@@ -10,6 +17,7 @@ if (savedTheme === 'light') {
 } else {
    toggleIcon.className = 'fas fa-moon';
 }
+applyThemeColor();
 
 toggleButton.addEventListener('click', () => {
    body.classList.toggle('light');
@@ -20,6 +28,7 @@ toggleButton.addEventListener('click', () => {
       toggleIcon.className = 'fas fa-moon';
       localStorage.setItem('theme', 'dark');
    }
+   applyThemeColor();
 });
 
 // Image Modal – now includes .screenshot-img
@@ -42,39 +51,36 @@ modal.addEventListener('click', (e) => {
 
 // Folder Toggle
 document.querySelectorAll('.folder-tab').forEach(tab => {
-   tab.addEventListener('click', () => {
-      const content = tab.nextElementSibling;
-      tab.classList.toggle('collapsed');
-      content.classList.toggle('collapsed');
-   });
+    tab.setAttribute('aria-expanded', 'true');
+    tab.addEventListener('click', () => {
+        const content = tab.nextElementSibling;
+        const isCollapsed = tab.classList.toggle('collapsed');
+        content.classList.toggle('collapsed', isCollapsed);
+        tab.setAttribute('aria-expanded', String(!isCollapsed));
+    });
 });
 
-// Scroll‑Reveal Animations
-const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
-const observer = new IntersectionObserver((entries) => {
-   entries.forEach(entry => {
-      if (entry.isIntersecting) {
-         entry.target.style.opacity = '1';
-         entry.target.style.transform = 'translateY(0)';
-      }
-   });
-}, observerOptions);
+// Scroll‑Reveal Animations (skipped when reduced motion is preferred)
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-document.querySelectorAll('section').forEach(section => {
-   section.style.opacity = '0';
-   section.style.transform = 'translateY(30px)';
-   section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-   observer.observe(section);
-});
+if (!prefersReducedMotion) {
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
 
-// Parallax Header
-window.addEventListener('scroll', () => {
-   const scrolled = window.pageYOffset;
-   const header = document.querySelector('header');
-   if (header) {
-      header.style.transform = `translateY(${-scrolled * 0.15}px)`;
-   }
-});
+    document.querySelectorAll('section').forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(24px)';
+        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(section);
+    });
+}
 
 // Back to Top Button
 const backToTopBtn = document.getElementById('backToTop');

@@ -351,7 +351,6 @@ section {
     border-radius: 12px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
-    animation: fadeInUp 0.25s ease-out both;
 }
 section:hover {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
@@ -1045,14 +1044,49 @@ body.light .tech-tags span {
         gap: 24px;
     }
     .sticky-nav {
-        gap: 12px;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 8px;
         padding: 6px 12px;
         border-radius: 40px;
         top: 12px;
+        width: 100%;
+        max-width: 100%;
+        mask-image: linear-gradient(to right, transparent 0, #000 24px, #000 calc(100% - 24px), transparent 100%);
+        -webkit-mask-image: linear-gradient(to right, transparent 0, #000 24px, #000 calc(100% - 24px), transparent 100%);
+    }
+    .sticky-nav::-webkit-scrollbar {
+        display: none;
+    }
+    .sticky-nav::before,
+    .sticky-nav::after {
+        content: '';
+        flex-shrink: 0;
+        width: 24px;
     }
     .sticky-nav a {
-        font-size: 0.7rem;
-        padding: 6px 12px;
+        flex-shrink: 0;
+        min-height: 40px;
+        display: inline-flex;
+        align-items: center;
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+    .theme-toggle {
+        flex-shrink: 0;
+        min-width: 40px;
+        min-height: 40px;
+    }
+    header,
+    section,
+    .project-item,
+    .achievement-item,
+    .skill-item {
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
     }
     .skill-item {
         padding: 16px;
@@ -1110,13 +1144,13 @@ body.light .tech-tags span {
         font-size: 1.3rem;
     }
     .sticky-nav {
-        gap: 8px;
-        padding: 4px 8px;
+        gap: 6px;
+        padding: 6px 10px;
         border-radius: 30px;
     }
     .sticky-nav a {
-        font-size: 0.65rem;
-        padding: 4px 10px;
+        font-size: 0.78rem;
+        padding: 8px 14px;
     }
     .skills-group {
         gap: 12px;
@@ -1139,5 +1173,24 @@ body.light .tech-tags span {
     }
     .certificate-img {
         height: 130px;
+    }
+}
+
+/* ─── Reduced Motion ─── */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    .skills-track,
+    .skills-marquee:hover .skills-track {
+        animation: none !important;
+    }
+    .skill-item:hover i,
+    .skill-item:hover {
+        transform: none;
+    }
+    section,
+    header {
+        transition: opacity 0.01s ease, transform 0.01s ease;
     }
 }
