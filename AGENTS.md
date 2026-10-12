@@ -21,7 +21,7 @@ Just open `index.html` in a browser or serve with any static file server.
 - **CSS**: All custom CSS is vanilla. Design tokens live in `:root` of `style.css` (colors, `--border`, hard `--shadow-*`). External deps are Fontshare (Cabinet Grotesk + Satoshi) and Font Awesome 6.5.1 (CDN). Keep shadows at 0 blur and borders at 2px.
 - **Image modal**: Clicking `.project-img` or `.certificate-img` opens a full-size modal. When adding new images, use one of these classes to get modal behavior automatically.
 - **Scroll-reveal**: All `<section>` elements fade in on scroll via IntersectionObserver. Sections start with `opacity: 0` in JS — don't set initial visibility in CSS or it will conflict.
-- **Skills marquee**: The skills list in `index.html` is duplicated (two `.skills-group` blocks) for a seamless CSS loop. Keep both copies in sync.
+- **Skills marquee**: The skills list in `index.html` is duplicated (two `.skills-group` blocks) for a seamless CSS loop. Keep both copies in sync. The marquee lives inside a white `.skills-panel` (with a black `.skills-chrome` bar) — skill cards follow the house card style: 2px black border, hard `4px` shadow, yellow fill + `translate(-3px,-3px)` on hover.
 
 ## Gotchas
 
