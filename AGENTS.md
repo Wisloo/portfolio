@@ -28,3 +28,4 @@ Just open `index.html` in a browser or serve with any static file server.
 - No linting, formatting, or typechecking configured. Run `git status` before committing to avoid accidental includes.
 - Subprojects under `RemoveSpaces/` and `SearchWord/` are standalone HTML apps linked from the main page. They don't share styles or scripts with the main site.
 - All project links pointing to `greensense.html`, `RemoveSpaces/...`, or `SearchWord/...` are local relative paths — they won't work on some static hosts without the correct base path.
+
