@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wisloo.github.io/portfolio/sitemap.xml
