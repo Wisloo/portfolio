@@ -2,7 +2,7 @@
 
 **Computer Science student** building full-stack apps, mobile experiences, and IoT projects that solve real problems.
 
-🎓 2nd Year CS · 🇵🇭 Philippines
+🎓 3rd Year CS · 🇵🇭 Philippines
 🔭 Currently learning cloud deployment & system design
 🌱 Building full-stack projects with Next.js, Flutter, and IoT integrations
 

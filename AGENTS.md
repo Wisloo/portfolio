@@ -9,7 +9,7 @@ Just open `index.html` in a browser or serve with any static file server.
 
 - `index.html` — main portfolio page
 - `greensense.html` + `greensense.css` — standalone GreenSense landing page (web assessment)
-- `style.css` — main site styles (dark/light theme via `.light` class on `<body>`)
+- `style.css` — main site styles (single fixed Neo-Brutalist theme)
 - `script.js` — theme toggle, image modal, folder expand, scroll-reveal, parallax
 - `assets/images/` — all images (profile, certificates, project screenshots)
 - `RemoveSpaces/` — self-contained mini-app (HTML/CSS/JS in `assets/`)
@@ -17,9 +17,9 @@ Just open `index.html` in a browser or serve with any static file server.
 
 ## Key Conventions
 
-- **Theme**: Dark mode is default. Light mode adds `.light` class to `<body>`. Theme persists via `localStorage`.
-- **CSS**: All custom CSS is vanilla. External deps are Google Fonts (Inter) and Font Awesome 6.5.1 (CDN).
-- **Image modal**: Clicking `.project-img`, `.certificate-img`, or `.screenshot-img` opens a full-size modal. When adding new images, use one of these classes to get modal behavior automatically.
+- **Theme**: Single fixed Neo-Brutalist palette (yellow `#ffe17c`, charcoal `#171e19`, sage `#b7c6c2`). No toggle, no `.light` class, no `localStorage` theme.
+- **CSS**: All custom CSS is vanilla. Design tokens live in `:root` of `style.css` (colors, `--border`, hard `--shadow-*`). External deps are Fontshare (Cabinet Grotesk + Satoshi) and Font Awesome 6.5.1 (CDN). Keep shadows at 0 blur and borders at 2px.
+- **Image modal**: Clicking `.project-img` or `.certificate-img` opens a full-size modal. When adding new images, use one of these classes to get modal behavior automatically.
 - **Scroll-reveal**: All `<section>` elements fade in on scroll via IntersectionObserver. Sections start with `opacity: 0` in JS — don't set initial visibility in CSS or it will conflict.
 - **Skills marquee**: The skills list in `index.html` is duplicated (two `.skills-group` blocks) for a seamless CSS loop. Keep both copies in sync.
 

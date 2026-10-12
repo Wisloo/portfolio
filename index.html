@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Louis Antonio Lapayag — Computer Science Student & Developer</title>
-    <meta name="theme-color" content="#0a0a0f" />
+    <meta name="theme-color" content="#ffe17c" />
 
     <!-- SEO -->
     <meta name="description"
@@ -67,10 +67,11 @@
         }
     </script>
 
-    <!-- Google Font: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet" />
+    <!-- Fonts: Cabinet Grotesk + Satoshi (Fontshare) -->
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+    <link
+        href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,500&f[]=satoshi@400,500,700,900&display=swap"
+        rel="stylesheet" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <!-- Custom CSS -->
@@ -81,27 +82,42 @@
 
     <!-- ─── Sticky Navigation ─── -->
     <nav class="sticky-nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects-apps">Projects</a>
-        <a href="#achievements">Certifications</a>
-        <a href="#contact">Contact</a>
-        <button class="theme-toggle" aria-label="Toggle theme">
-            <i class="fas fa-moon"></i>
-        </button>
+        <a href="#top" class="nav-logo" aria-label="Back to top">
+            <span class="nav-logo__mark"><i class="fas fa-bolt" aria-hidden="true"></i></span>
+            <span class="nav-logo__text">Louis</span>
+        </a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects-apps">Projects</a>
+            <a href="#achievements">Certifications</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="#contact" class="btn btn--dark nav-cta">Contact Me</a>
     </nav>
 
     <!-- ─── Header / Hero ─── -->
-    <header>
-        <div class="header-content">
-            <img src="assets/images/profileImage.jpg" alt="Profile Picture" id="profile-img" />
-            <h1 id="name">Louis Antonio D. Lapayag</h1>
-            <p class="hero-tagline">Building things that solve real problems</p>
-            <p id="course-year">Computer Science · 2nd Year</p>
-            <div class="hero-buttons">
-                <a href="#projects-apps" class="hero-btn hero-btn-primary">View Projects</a>
-                <a href="#contact" class="hero-btn hero-btn-secondary">Contact Me</a>
-                <a href="https://github.com/Wisloo" target="_blank" class="hero-btn hero-btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+    <header id="top">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <span class="hero-badge"><i class="fas fa-bolt" aria-hidden="true"></i> 3rd Year CS · Philippines</span>
+                <h1 id="name">Louis Antonio D. <span class="stroke">Lapayag</span></h1>
+                <p class="hero-tagline">Building things that solve real problems</p>
+                <p id="course-year">Computer Science · Mapúa Malayan Colleges Mindanao</p>
+                <div class="hero-buttons">
+                    <a href="#projects-apps" class="btn btn--dark">View Projects</a>
+                    <a href="#contact" class="btn btn--light">Contact Me</a>
+                    <a href="https://github.com/Wisloo" target="_blank" class="btn btn--ghost"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <span class="hero-visual__accent" aria-hidden="true"></span>
+                <div class="hero-card">
+                    <img src="assets/images/profileImage.jpg" alt="Louis Antonio D. Lapayag" id="profile-img" />
+                    <div class="hero-card__bar">
+                        <span class="chip chip--sage">Louis Antonio D. Lapayag</span>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -111,7 +127,7 @@
         <h2>About Me</h2>
         <div class="about-grid">
             <div class="about-text">
-                <p>I'm Louis, a 2nd-year Computer Science student. I build web and desktop apps — mostly things that
+                <p>I'm Louis, a 3rd-year Computer Science student. I build web and desktop apps — mostly things that
                     solve real problems for people around me. Right now I'm focused on web development with Next.js and
                     Tailwind, and I'm always picking up new tools.</p>
                 <p>I've worked with C++, Java, C#, and JavaScript across school projects and personal builds.</p>
@@ -334,7 +350,27 @@
 
     <!-- ─── Footer ─── -->
     <footer>
-        <p>&copy; 2025 Louis Antonio D. Lapayag</p>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Louis Antonio D. Lapayag</h3>
+                <p>Computer Science student building web, mobile, and IoT projects.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="#about">About</a>
+                <a href="#projects-apps">Projects</a>
+                <a href="#achievements">Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="footer-social">
+                    <a href="https://github.com/Wisloo" target="_blank" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/louis-antonio-d-lapayag-3a6090250/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2026 Louis Antonio D. Lapayag</p>
     </footer>
 
     <!-- ─── Back to Top ─── -->
@@ -343,8 +379,8 @@
     </button>
 
     <!-- ─── Image Modal ─── -->
-    <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
+    <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Image preview" aria-hidden="true">
+        <span class="close" role="button" tabindex="0">&times;</span>
         <img class="modal-content" id="modalImage" />
     </div>
 

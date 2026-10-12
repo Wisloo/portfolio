@@ -1,52 +1,40 @@
-// Theme Toggle
-const toggleButton = document.querySelector('.theme-toggle');
-const toggleIcon = toggleButton.querySelector('i');
-const body = document.body;
-const metaThemeColor = document.querySelector('meta[name="theme-color"]');
-
-function applyThemeColor() {
-    if (metaThemeColor) {
-        metaThemeColor.content = body.classList.contains('light') ? '#f5f7fa' : '#0a0a0f';
-    }
-}
-
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'light') {
-   body.classList.add('light');
-   toggleIcon.className = 'fas fa-sun';
-} else {
-   toggleIcon.className = 'fas fa-moon';
-}
-applyThemeColor();
-
-toggleButton.addEventListener('click', () => {
-   body.classList.toggle('light');
-   if (body.classList.contains('light')) {
-      toggleIcon.className = 'fas fa-sun';
-      localStorage.setItem('theme', 'light');
-   } else {
-      toggleIcon.className = 'fas fa-moon';
-      localStorage.setItem('theme', 'dark');
-   }
-   applyThemeColor();
-});
-
-// Image Modal – now includes .screenshot-img
+// Image Modal
 const modal = document.getElementById('imageModal');
 const modalImg = document.getElementById('modalImage');
 const closeBtn = document.querySelector('.close');
+let lastFocused = null;
+
+function openModal(src) {
+    lastFocused = document.activeElement;
+    modalImg.src = src;
+    modal.style.display = 'block';
+    modal.setAttribute('aria-hidden', 'false');
+    closeBtn.focus();
+}
+
+function closeModal() {
+    modal.style.display = 'none';
+    modal.setAttribute('aria-hidden', 'true');
+    if (lastFocused) lastFocused.focus();
+}
 
 document.querySelectorAll('.project-img, .certificate-img').forEach(img => {
    img.style.cursor = 'pointer';
-   img.addEventListener('click', function() {
-      modal.style.display = 'block';
-      modalImg.src = this.src;
-   });
+   img.addEventListener('click', () => openModal(img.src));
 });
 
-closeBtn.addEventListener('click', () => { modal.style.display = 'none'; });
+closeBtn.addEventListener('click', closeModal);
+closeBtn.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        closeModal();
+    }
+});
 modal.addEventListener('click', (e) => {
-   if (e.target === modal) modal.style.display = 'none';
+   if (e.target === modal) closeModal();
+});
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.style.display === 'block') closeModal();
 });
 
 // Folder Toggle
